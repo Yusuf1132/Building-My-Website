@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Counters</title>
+	<style>
+		body{
+			counter-reset: section;
+		}
+		h1{
+			counter-reset: sub-section;
+		}
+		h1::before{
+			counter-increment: section;
+			content: counter(section)":";
+		}
+		h3::before{
+			counter-increment: sub-section;
+			content: "section " counter(section)" . " counter(sub-section)": ";
+		}
+		</style>
+
+</head>
+<body>
+	<header>djc hhdj</header>
+<h1>Introduction</h1>
+<h3>Life of aliens</h3>
+<p>uhdudvs vfsbvvfuvvb c vsuvsv vvvvbuv vhv</p>
+<h1>Introduction</h1>
+<h3>Life of aliens</h3>
+<p>uhdudvs vfsbvvfuvvb c vsuvsv vvvvbuv vhv</p>
+<h1>Introduction</h1>
+<h3>Life of aliens</h3>
+<p>uhdudvs vfsbvvfuvvb c vsuvsv vvvvbuv vhv</p>
+<h1>Introduction</h1>
+<h3>Life of aliens</h3>
+<p>uhdudvs vfsbvvfuvvb c vsuvsv vvvvbuv vhv<br></p>
+<p>sdvcdc</p><br>
+</body>
+</html>

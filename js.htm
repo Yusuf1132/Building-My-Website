@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+	
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javascript</title>
+</head>
+<body>
+<h1>Get how old your phone is</h1><br>
+<h4>Enter Year you bougth your phone</h4>
+<input type="text" id = "phone">
+ <button type="button" onclick="myfunction">Enter</button>
+<p id="Demo"></p>
+
+<script>
+/*class phone {
+	constructor(model, year){
+		this.model=model;
+		this.year=year;
+	}
+	age()
+		let date = new Date();
+		return date.getFullYear() - this.year;
+	}*/
+
+const student= {
+	matNo:"2017/1/66591EE";
+	level:"400";
+	institution:"Futminna";
+}
+let output = "";
+for(let i in student){
+   output += student[i] + " ";
+} 
+let x = document.getElementById("Demo").innerHTML = output;
+
+
+/*let myPhone = new phone("iphone xs", 2018);
+document.getElementById("Demo").innerHTML=myPhone.model; */
+</body>
+</html>
